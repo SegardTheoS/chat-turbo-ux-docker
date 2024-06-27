@@ -29,7 +29,7 @@ class HomeController extends AbstractController
             $entityManager->flush();
             $form = $emptyForm;
         }
-      
+
 
         return $this->render('home/index.html.twig', [
             'form' => $form,

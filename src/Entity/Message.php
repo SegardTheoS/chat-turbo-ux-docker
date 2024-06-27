@@ -23,7 +23,8 @@ class Message
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->setCreatedAt(new DateTimeImmutable());
     }
 
